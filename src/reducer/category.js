@@ -10,7 +10,7 @@ export default (state=initialState, action) => {
       return state.map(category =>
         category.id === payload.id ? payload : category)
     case 'CATEGORY_DELETE':
-      return slate.filter(category => category.id !== payload.id)
+      return state.filter(category => category.id !== payload.id)
     case 'CATEGORY_RESET':
       return initialState
     default:
