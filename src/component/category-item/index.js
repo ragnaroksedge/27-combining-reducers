@@ -26,7 +26,7 @@ class CategoryItem extends React.Component {
   }
 }
 
-let mapStateToProps = () => ({});
+let mapStateToProps = (state) => ({});
 
 let mapDispatchToProps = dispatch => ({
   categoryUpdate: (category) => dispatch(categoryUpdate(category)),
